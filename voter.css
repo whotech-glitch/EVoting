@@ -1,0 +1,32 @@
+/* VOTER PAGE – friendly, colourful, mobile-first */
+:root{--blue:#1d4ed8;--gold:#f5b301;--green:#16a34a;--red:#dc2626;--ink:#1e293b;--mut:#64748b;--bg:#fff8e7;--card:#fff;--bd:#f1e3b8}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.5 "Trebuchet MS",system-ui,sans-serif;padding-bottom:env(safe-area-inset-bottom,0)}
+.hero{background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:#fff;text-align:center;padding:calc(28px + env(safe-area-inset-top,0px)) 16px 54px;border-radius:0 0 40px 40px}
+.badge{font-size:2.6rem;background:var(--gold);width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.hero h1{margin:0;font-size:1.6rem}.hero p{margin:6px 0 0;opacity:.9}
+nav{display:flex;justify-content:center;gap:8px;margin:-26px auto 10px;position:relative}
+nav button{border:0;background:#fff;color:var(--ink);padding:12px 20px;border-radius:30px;font:inherit;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+nav button.on{background:var(--gold)}
+main{max-width:640px;margin:0 auto;padding:12px 14px 30px}
+.card{background:var(--card);border:2px solid var(--bd);border-radius:20px;padding:18px;margin-bottom:16px}
+h2,h3{margin:0 0 8px}label.f{display:block;font-weight:700;margin:12px 0 5px}
+input,select{width:100%;padding:13px;border:2px solid #e2e8f0;border-radius:12px;font:inherit;background:#fff;color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:var(--blue)}
+.btn{display:block;width:100%;background:var(--blue);color:#fff;border:0;padding:15px;border-radius:14px;font:inherit;font-weight:700;margin-top:16px;cursor:pointer}
+.btn.gold{background:var(--gold);color:#1e293b}.btn.ghost{background:#e2e8f0;color:var(--ink)}
+.mut{color:var(--mut);font-size:.92rem}.err{background:#fee2e2;color:#991b1b;padding:10px 12px;border-radius:10px;margin-top:12px}
+.steps{display:flex;gap:6px;margin-bottom:12px}.steps span{flex:1;height:8px;border-radius:4px;background:#e2e8f0}.steps span.on{background:var(--blue)}
+.cands{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.cand{position:relative;display:block;text-align:center;border:3px solid #e2e8f0;border-radius:16px;padding:14px 8px;cursor:pointer}
+.cand input{position:absolute;opacity:0}
+.cand:has(input:checked){border-color:var(--green);background:#f0fdf4}
+.cand:has(input:checked)::after{content:"✔";position:absolute;top:6px;right:10px;color:var(--green);font-weight:800}
+.cand .av{width:84px;height:84px;font-size:1.6rem;margin:0 auto 8px}.cand b{display:block;font-size:.98rem}
+.av{width:56px;height:56px;border-radius:50%;object-fit:cover;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}
+.thanks{text-align:center}.thanks .big{font-size:4rem}
+.res{display:flex;align-items:center;gap:10px;margin:10px 0}.res .g{flex:1;min-width:0}
+.track{height:12px;border-radius:6px;background:#e2e8f0;overflow:hidden;margin-top:4px}.track i{display:block;height:100%;background:#94a3b8;border-radius:6px}
+.res.win .track i{background:var(--green)}.res.win .nm{font-weight:800}
+.crown{background:var(--gold);color:#1e293b;border-radius:10px;font-size:.72rem;padding:1px 8px;margin-left:6px;font-weight:800}
+footer{text-align:center;color:var(--mut);font-size:.82rem;padding:10px 0 24px}
